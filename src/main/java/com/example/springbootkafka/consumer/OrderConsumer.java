@@ -25,7 +25,7 @@ public class OrderConsumer {
 //        }
     }
 
-    private void processOrder(OrderEvent order) {
+    void processOrder(OrderEvent order) {
         // 주문 처리 로직
         log.info("Processing order: {}", order.getOrderId());
     }

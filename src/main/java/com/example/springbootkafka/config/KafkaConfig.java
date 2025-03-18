@@ -43,7 +43,7 @@ public class KafkaConfig {
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "order-group");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-        props.put(JsonDeserializer.TRUSTED_PACKAGES, "com.example.model");
+        props.put(JsonDeserializer.TRUSTED_PACKAGES, "com.example.springbootkafka.model");
         return new DefaultKafkaConsumerFactory<>(props);
     }
 
